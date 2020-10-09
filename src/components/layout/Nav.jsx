@@ -1,23 +1,26 @@
 import React from 'react';
-import { StyledNav } from "../styled/nav"
+import { StyledNav } from "../styled/stylings";
 
-const Nav = () => {
+
+export const Nav = () => {
   return (
     <StyledNav>
-      <nav>
-        <h1>KOJO KWAKYE</h1>
-        <ul>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/projects">Projects</a>
-          </li>
-          <li>
-            <a href="/contact">Contacts</a>
-          </li>
-        </ul>
-      </nav>
+      <header>
+        <h2 className="logo">KOJO KWAKYE</h2>
+        <nav>
+          <ul>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/projects">Projects</a>
+            </li>
+            <li>
+              <a href="/contact">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </StyledNav>
   );
 }
